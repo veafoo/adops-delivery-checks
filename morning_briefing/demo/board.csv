@@ -1,0 +1,13 @@
+# Donnees SYNTHETIQUES a but de demonstration. Annonceurs fictifs, aucun lien avec un client reel.
+campagne,tache,statut,echeance,responsable
+newco-fr-display,Brief client valide,done,2026-07-23,Lead delivery
+newco-fr-display,Creas recues et recettees,done,2026-07-24,Studio
+newco-fr-display,Tags adserver annonceur poses et testes,blocked,2026-07-25,Lead delivery
+newco-fr-display,Deals et inventaire reserves,doing,2026-07-27,Trading
+newco-fr-display,Plan de marquage valide,todo,2026-07-27,Lead delivery
+pharma-de-video,Brief client valide,done,2026-07-25,Lead delivery
+pharma-de-video,Creas recues et recettees,todo,2026-07-30,Studio
+pharma-de-video,Tags adserver annonceur poses et testes,todo,2026-07-31,Lead delivery
+telco-es-audio,Recette audio 3 formats,done,2026-07-21,Studio
+resto-fr-dooh,Parc ecrans confirme,done,2026-07-20,Trading
+resto-fr-dooh,Boucles et part de voix validees,doing,2026-07-24,Trading

@@ -1,0 +1,16 @@
+jour,campagne,placement,env,imp_plateforme,imp_ssp,imp_adserver,imp_verif,taux_consentement
+2026-07-20,retail-fr,pl-hp-banner,web,100000,93000,94000,90240,0.62
+2026-07-21,retail-fr,pl-hp-banner,web,102000,94860,95500,91680,0.61
+2026-07-22,retail-fr,pl-hp-banner,web,98000,91140,92100,88416,0.62
+2026-07-20,retail-fr,pl-inapp-inter,inapp,50000,46500,200,192,0.58
+2026-07-21,retail-fr,pl-inapp-inter,inapp,51000,47430,180,172,0.58
+2026-07-20,auto-de,pl-video-preroll,web,80000,74400,49000,47040,0.60
+2026-07-21,auto-de,pl-video-preroll,web,81000,75330,48500,46560,0.61
+2026-07-22,auto-de,pl-video-preroll,web,79000,73470,47800,45888,0.60
+2026-07-20,bank-be,pl-ctv-spot,ctv,30000,27900,27500,26400,0.70
+2026-07-21,bank-be,pl-ctv-spot,ctv,31000,28830,20000,19200,0.70
+2026-07-22,bank-be,pl-ctv-spot,ctv,30500,28365,19500,18720,0.71
+2026-07-20,resto-fr,pl-dooh-ecran,dooh,400000,,1200,,
+2026-07-20,media-uk,pl-ctv-ssai,ctv,40000,44100,36000,34920,0.68
+2026-07-21,media-uk,pl-ctv-ssai,ctv,41000,45200,36900,35793,0.68
+2026-07-22,media-uk,pl-ctv-ssai,ctv,40500,44600,36400,35308,0.68

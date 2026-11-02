@@ -1,0 +1,13 @@
+# Donnees SYNTHETIQUES a but de demonstration. Annonceurs fictifs, aucun lien avec un client reel.
+campagne,annonceur,marche,canal,statut,date_debut,date_fin,budget,depense,imp_cible,imp_livrees,clics,landings,conversions,revenu,cout_media,marge_floor,ctr_cible,landing_cible,conv_cible,cpa_cible
+retail-fr-display-q3,Retailer Alpha,FR,display,live,2026-07-16,2026-08-05,40000,19500,4000000,1980000,7900,7100,410,40000,30500,0.22,0.002,0.9,0.055,95
+auto-de-video,Constructeur Beta,DE,video,live,2026-07-18,2026-08-07,60000,22000,3000000,1050000,4100,3800,150,60000,44000,0.25,0.0014,0.92,0.038,290
+bank-be-ctv,Banque Gamma,BE,ctv,live,2026-07-20,2026-08-09,35000,14500,1200000,540000,0,0,0,35000,26000,0.2,0,0,0,0
+resto-fr-dooh,Resto Delta,FR,dooh,live,2026-07-21,2026-08-04,28000,12000,9000000,4300000,0,0,0,28000,20500,0.22,0,0,0,0
+fashion-it-inapp,Mode Epsilon,IT,inapp,live,2026-07-14,2026-08-01,22000,17800,2500000,1550000,9800,3100,120,22000,19100,0.2,0.0035,0.9,0.04,150
+telco-es-audio,Telco Zeta,ES,audio,live,2026-07-22,2026-08-11,18000,3400,1400000,240000,0,0,0,18000,13800,0.22,0,0,0,0
+sport-fr-native,Sport Eta,FR,native,live,2026-07-11,2026-07-29,30000,26500,2800000,2720000,11200,10300,690,30000,21500,0.22,0.0035,0.9,0.06,45
+beaute-fr-display,Beaute Theta,FR,display,fini,2026-06-16,2026-07-24,50000,49800,5000000,4960000,17800,16400,980,50000,37000,0.22,0.0033,0.9,0.055,55
+boisson-be-video,Boisson Iota,BE,video,fini,2026-06-21,2026-07-25,25000,24900,1800000,1790000,6300,5900,240,25000,18400,0.22,0.0033,0.9,0.04,110
+newco-fr-display,NewCo Kappa,FR,display,setup,2026-07-28,2026-08-25,35000,0,3500000,0,0,0,0,35000,0,0.22,0.003,0.9,0.05,70
+pharma-de-video,Pharma Lambda,DE,video,setup,2026-08-03,2026-09-02,45000,0,2600000,0,0,0,0,45000,0,0.25,0.0015,0.92,0.04,200

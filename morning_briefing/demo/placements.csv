@@ -1,0 +1,13 @@
+# Donnees SYNTHETIQUES a but de demonstration. Annonceurs fictifs, aucun lien avec un client reel.
+campagne,placement,canal,budget,depense,imp_cible,imp_livrees,clics,landings,conversions,revenu,cout_media
+retail-fr-display-q3,HP-banner-desktop,display,16000,8100,1600000,830000,3600,3350,215,16000,12200
+retail-fr-display-q3,HP-banner-mobile,display,14000,7300,1400000,720000,3100,2900,150,14000,10700
+retail-fr-display-q3,Retargeting-300x250,display,10000,4100,1000000,430000,1200,850,45,10000,7600
+auto-de-video,Preroll-instream,video,35000,13500,1800000,690000,2700,2550,105,35000,25800
+auto-de-video,Instream-premium,video,25000,8500,1200000,360000,1400,1250,45,25000,18200
+fashion-it-inapp,Interstitiel-iOS,inapp,12000,9700,1400000,880000,5600,1800,72,12000,10400
+fashion-it-inapp,Banner-Android,inapp,10000,8100,1100000,670000,4200,1300,48,10000,8700
+sport-fr-native,Feed-editorial,native,18000,15900,1700000,1660000,6900,6400,430,18000,12900
+sport-fr-native,Feed-sport,native,12000,10600,1100000,1060000,4300,3900,260,12000,8600
+bank-be-ctv,BVOD-premium,ctv,20000,9100,700000,340000,0,0,0,20000,14800
+bank-be-ctv,BVOD-longue-traine,ctv,15000,5400,500000,200000,0,0,0,15000,11200

@@ -1,0 +1,8 @@
+imp_id,ts,placement,url,referrer,ua,consent,status
+i1,2026-07-25T09:12:01,pl-hp-banner,https://ad.example.com/imp?cb=8347562891&dclid=abc,https://www.lesite.fr/article,Mozilla/5.0 (Windows NT 10.0),granted,200
+i2,2026-07-25T09:13:22,pl-hp-banner,https://ad.example.com/imp?cb=1193847562&dclid=def,https://www.lesite.fr/home,Mozilla/5.0 (Macintosh),granted,200
+i2,2026-07-25T09:13:22,pl-hp-banner,https://ad.example.com/imp?cb=1193847562&dclid=def,https://www.lesite.fr/home,Mozilla/5.0 (Macintosh),granted,200
+i3,2026-07-25T23:58:40,pl-hp-banner,https://ad.example.com/imp?ord=%%CACHEBUSTER%%,https://cdn.ampproject.org/v/s/lesite.fr,Mozilla/5.0 (Linux; Android),denied,200
+i4,2026-07-26T00:01:12,pl-hp-banner,https://ad.example.com/imp,http://autre-site.com/page,Mozilla/5.0 (iPhone; FBAV/412),denied,302
+i5,2026-07-26T00:02:44,pl-hp-banner,https://ad.example.com/imp?cb=555,,python-requests/2.31,denied,200
+i6,2026-07-25T14:20:00,pl-hp-banner,https://ad.example.com/imp?cb=9284756102&dclid=ghi,https://www.lesite.fr/sport,Mozilla/5.0 (Windows NT 10.0),granted,200

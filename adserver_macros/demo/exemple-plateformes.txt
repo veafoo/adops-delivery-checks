@@ -1,0 +1,32 @@
+Le statut dit d'OÙ VIENT la donnée, pas si elle est bonne.
+
+  VERIFIE_DOC  confronte a la doc editeur citee en source
+  NON_VERIFIE  issu de la pratique, jamais reconfronte a la doc
+  NON_PUBLIC   doc non accessible publiquement : rien n'est expose
+
+--- VERIFIE_DOC
+  adform               Adform                         33 rôles   famille __ADF*__ ; %%ADF*%% equivalent mais deconseille par l'editeur ; clic = commande %CLICK;cpdir=
+                       source (2026-07-27) : https://www.adformhelp.com/hc/en-us/articles/9739143043345-Overview-of-Supported-Ad-Serving-Macros
+  amazon_mmp           Amazon Ads (URL de mesure MMP, app)  3 rôles   perimetre mesure d'app uniquement ; famille __CS_*__ / __AAX_*__ ; pas des macros crea
+                       source (2026-08-01) : https://advertising.amazon.com/resources/ad-policy/mmp-measurement-urls
+  broadsign            Broadsign Control (player)      9 rôles   famille {{double accolade}}, surface player ; ni cachebuster ni multiplicateur d'impressions
+                       source (2026-07-27) : https://docs.broadsign.com/broadsign-control/latest/en/broadsign-control-real-time-aud-api.html
+  equativ_activation   Equativ Activation (achat)     21 rôles   famille {accolades} ; casse significative ; DSA en ${MACRO}
+                       source (2026-07-27) : https://help.equativ.com/create-line-item-macros
+  equativ_adserver     Equativ Ad Server (ex-Smart)   11 rôles   famille [crochets] cote ad server ; filtres [macro|filtre] ; ne pas confondre avec Activation
+                       source (2026-07-27) : https://help.smartadserver.com/articles/Knowledge/Macros
+  google_ads           Google Ads (ValueTrack)        10 rôles   parametres d'URL de suivi, pas des macros de diffusion (voir commentaire)
+                       source (2026-07-27) : https://support.google.com/google-ads/answer/6305348
+--- NON_VERIFIE
+  cm360                Campaign Manager 360           16 rôles   issue de la pratique ; macros app/mobile non renseignees
+  dv360                Display & Video 360            35 rôles   couverture la plus complete de la table, issue de la pratique
+  gam                  Google Ad Manager              19 rôles   issue de la pratique ; macros app/mobile non renseignees
+  hivestack            Hivestack (DOOH)                8 rôles   issue de la pratique, jamais reconfrontee a la doc editeur
+  openrtb              OpenRTB 2.6 (IAB)              11 rôles   jeu volontairement reduit : c'est un protocole, pas un ad server
+  ttd                  The Trade Desk                 20 rôles   issue de la pratique ; placement_id et GPP a confirmer
+  vistar               Vistar Media (DOOH)             8 rôles   issue de la pratique ; centre d'aide Vistar inaccessible en lecture publique
+  xandr                Xandr (Microsoft Invest)       27 rôles   issue de la pratique ; CLICK_URL et CACHEBUSTER corrobores par la doc Microsoft
+--- NON_PUBLIC
+  amazon_dsp           Amazon DSP                      0 rôles   doc macros derriere authentification : rien n'est expose, a recuperer aupres du contact Amazon
+  teads                Teads                           0 rôles   consomme les macros de l'ad server hote (data-tracking-click), n'expose pas de famille propre
+                       source (2026-07-27) : https://support.teads.tv/support/solutions/articles/36000066266

@@ -1,0 +1,15 @@
+7 impressions analysées
+  [ERREUR] 1 ID(s) d'impression dupliqués (double comptage) - ex : ['i2']
+  [ALERTE] 42.9 % des impressions à cheval sur minuit : suspicion de décalage de fuseau/fenêtre de comptage
+  [ALERTE] 14.3 % d'impressions AMP : environnement pauvre en signal pour les tags tiers
+  [INFO] top referrers : www.lesite.fr (57.1 %), cdn.ampproject.org (14.3 %), autre-site.com (14.3 %), (vide) (14.3 %)
+  [ALERTE] referrer http vers tag https sur 14.3 % : referrer strippé -> attribution dégradée
+  [ERREUR] macros NON résolues en prod sur 14.3 % des impressions (cache/comptage cassés) - lint : check_tracking_url.py
+  [ALERTE] cachebuster absent sur 14.3 % des URLs : mise en cache -> sous-comptage côté annonceur
+  [INFO] dclid présent sur 57.1 %
+  [ALERTE] consentement refusé/absent : 42.9 % - autant d'impressions invisibles pour un ad server Google
+  [ALERTE] UA de type bot sur 14.3 % : IVT probable - un côté filtre, l'autre pas = écart
+  [INFO] webviews in-app : 14.3 % (signal pauvre pour les tags tiers)
+  [ERREUR] réponses non-2xx sur 14.3 % : {'302': 1}
+
+9 finding(s)

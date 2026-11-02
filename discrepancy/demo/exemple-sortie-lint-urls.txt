@@ -1,0 +1,31 @@
+
+=== https://ad.doubleclick.net/ddm/trackimp/N123.456SITE/B789;ord=%%CACHEBUSTER%%?dclid=${AUCTION_ID}
+  [ERREUR] [niveau 0] macro GAM/DCM non résolue (%%X%%) : %%CACHEBUSTER%%
+  [ERREUR] [niveau 0] macro DV360/OpenRTB non résolue (${X}) : ${AUCTION_ID}
+  [ERREUR] [niveau 0] caractères non encodés dans l'URL : ['{', '}']
+  [INFO] [niveau 0] pas de cachebuster détecté sur un tracker d'impression : vérifier la politique de cache. Toutes les plateformes n'en exposent pas, ce n'est pas un défaut en soi
+
+=== https://track.example.com/imp?cb=1111111&utm_Source=display&utm_medium=&url=https://www.client.com/promo?utm_c...
+  [ALERTE] [niveau 0] paramètre vide : 'utm_medium='
+  [ALERTE] [niveau 0] casse UTM non canonique : 'utm_Source' (GA est sensible à la casse)
+  [ALERTE] [niveau 0] cachebuster statique suspect : '1111111' (mise en cache -> sous-comptage)
+  [ERREUR] [niveau 0] URL imbriquée NON encodée dans 'url=' : ses paramètres sont avalés par l'URL externe (param bleed) - tout ce qui suit le premier '&' interne est perdu au redirect
+
+=== http://adserver.example.com/click?r=https%3A%2F%2Fwww.client.com%2Flp%3Futm_source%3Dcm360%26utm_medium%3Ddisp...
+  [ERREUR] [niveau 0] tracker en http:// : downgrade (perte referrer/cookies, blocage mixed content)
+  [INFO] [niveau 0] pas de cachebuster détecté sur un tracker d'impression : vérifier la politique de cache. Toutes les plateformes n'en exposent pas, ce n'est pas un défaut en soi
+
+=== https://tag.example.com/redirect?dest=https%253A%252F%252Fclient.com%252Flp&ord=[timestamp]
+  [ERREUR] [niveau 0] macro type CM360/Sizmek non résolue ([X]) : [timestamp]
+  [INFO] [niveau 0] 'dest=' est encodé 2 fois. Ce n'est un défaut que si tag.example.com ne décode pas 2 fois avant de rediriger. Déclarer la chaîne (--decodages tag.example.com=N) pour obtenir un verdict au lieu d'une mesure
+
+=== https://serving.example.net/imp?ultm_source=cm&campaign=q3 2026&pid=55&pid=56
+  [ERREUR] [niveau 0] caractères non encodés dans l'URL : [' ']
+  [ALERTE] [niveau 0] paramètre en double : 'pid' x2 (le comptage peut diverger selon lequel est lu)
+  [ERREUR] [niveau 0] typo probable dans 'ultm_source=cm'
+  [INFO] [niveau 0] pas de cachebuster détecté sur un tracker d'impression : vérifier la politique de cache. Toutes les plateformes n'en exposent pas, ce n'est pas un défaut en soi
+
+=== https://clean.example.com/imp?cb=8347562891&utm_source=cm360&utm_medium=display&utm_campaign=q3
+  OK - aucun problème détecté
+
+12 finding(s) ERREUR/ALERTE sur 6 URL(s)

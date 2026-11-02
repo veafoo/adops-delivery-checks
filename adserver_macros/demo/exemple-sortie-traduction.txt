@@ -1,0 +1,56 @@
+
+==============================================================================
+TAG : https://ad.example-serving.com/imp?cb=%n&clk=%c&cid=%ecid!&site=%esid!&page=%u
+
+  Campaign Manager 360 -> Display & Video 360
+
+  https://ad.example-serving.com/imp?cb=${CACHEBUSTER}&clk=${CLICK_URL_UNESC}&cid=${CREATIVE_ID}&site=${SITE_ID}&page=${SOURCE_URL_ENC}
+
+  Contrôles du tag final :
+  [ERREUR] la chaîne de clic est passée NON encodée dans 'clk=' et d'autres paramètres suivent : tout ce qui suit sera avalé au redirect. Utiliser la variante encodée ${CLICK_URL_ENC}, ou placer ce paramètre en dernier
+  [ALERTE] aucune macro de consentement : pour une diffusion en Europe, ajouter ${GDPR_CONSENT_755}, ${GDPR}, ${GPP_SID}
+
+==============================================================================
+TAG : https://tracker.example.com/i?clk=%%CLICK_URL_UNESC%%&cb=%%CACHEBUSTER%%&pos=%%PATTERN:pos%%
+
+  Campaign Manager 360 -> Display & Video 360
+
+  https://tracker.example.com/i?clk=%${CLICK_URL_UNESC}LICK_URL_UNESC%%&cb=%${CLICK_URL_UNESC}ACHEBUSTER%%&pos=%%PATTERN:pos%%
+
+  Contrôles du tag final :
+  [ALERTE] aucune macro de consentement : pour une diffusion en Europe, ajouter ${GDPR_CONSENT_755}, ${GDPR}, ${GPP_SID}
+
+==============================================================================
+TAG : https://t.example.net/i?cb=%%CACHEBUSTER%%&id=${CREATIVE_ID}&ord=[timestamp]
+
+  Campaign Manager 360 -> Display & Video 360
+
+  https://t.example.net/i?cb=%${CLICK_URL_UNESC}ACHEBUSTER%%&id=${CREATIVE_ID}&ord=[timestamp]
+
+  Contrôles du tag final :
+  [ALERTE] aucune macro de consentement : pour une diffusion en Europe, ajouter ${GDPR_CONSENT_755}, ${GDPR}, ${GPP_SID}
+  [ERREUR] [timestamp] appartient à Equativ Ad Server (ex-Smart) et non à Display & Video 360 : elle ne sera jamais substituée
+
+==============================================================================
+TAG : https://t.example.net/i?cb=${CACHEBUSTER}&ifa=${ADVERTISING_IDENTIFIER}&clk=${CLICK_URL_UNESC}&lat=${LATITUDE}&lon=${LONGITUDE}
+
+  Campaign Manager 360 -> Display & Video 360
+
+  https://t.example.net/i?cb=${CACHEBUSTER}&ifa=${ADVERTISING_IDENTIFIER}&clk=${CLICK_URL_UNESC}&lat=${LATITUDE}&lon=${LONGITUDE}
+
+  Contrôles du tag final :
+  [ERREUR] la chaîne de clic est passée NON encodée dans 'clk=' et d'autres paramètres suivent : tout ce qui suit sera avalé au redirect. Utiliser la variante encodée ${CLICK_URL_ENC}, ou placer ce paramètre en dernier
+  [ALERTE] aucune macro de consentement : pour une diffusion en Europe, ajouter ${GDPR_CONSENT_755}, ${GDPR}, ${GPP_SID}
+
+==============================================================================
+TAG : https://ad.example-serving.com/imp?cid=%ecid!&site=%esid!
+
+  Campaign Manager 360 -> Display & Video 360
+
+  https://ad.example-serving.com/imp?cid=${CREATIVE_ID}&site=${SITE_ID}
+
+  Contrôles du tag final :
+  [ALERTE] aucun cachebuster détecté : ajouter ${CACHEBUSTER} — sans lui l'impression est mise en cache et sous-comptée
+  [ALERTE] aucune macro de consentement : pour une diffusion en Europe, ajouter ${GDPR_CONSENT_755}, ${GDPR}, ${GPP_SID}
+
+9 avertissement(s) au total

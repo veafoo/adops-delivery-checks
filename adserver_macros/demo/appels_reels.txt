@@ -1,0 +1,9 @@
+# Extrait de log d'appels réels (anonymisé, domaines fictifs) — 3 étages de la chaîne
+https://ad.example-serving.com/imp?cb=%%CACHEBUSTER%%&cid=12345&pos=atf
+https://ad.example-serving.com/imp?cb=8347562891&cid=12345&pos=atf
+https://px.example.com/track/impression?ord=%n&adv=778&cs=1
+https://t.example.net/clk?url=https%3A%2F%2Fclient.com%2Flp%3Fgclid%3D%24%7BGCLID%7D&cb=99
+https://ad.example-serving.com/imp?cb=%25%25CACHEBUSTER%25%25&cid=98765
+https://px.example.com/beacon/complete?id=${AUCTION_ID}&pct=100
+https://ad.example-serving.com/imp?creative=%ecid!&site=%esid!&cb=1827364
+https://t.example.net/clk?dest=https%3A%2F%2Fclient.com%2Fpromo&cb=553412

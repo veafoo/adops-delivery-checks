@@ -1,0 +1,32 @@
+[CONSENT_EXPLIQUE  ] auto-de / pl-video-preroll (web)  plateforme=240,000 adserver=145,300 ratio=60.5%
+                     ratio 61% ~ taux de consentement 60% : l'écart est le consentement (ad server Google), pas une panne - à chiffrer au client
+                       plateforme -> SSP : 93.0%  [ECART_MATERIEL]
+                       SSP -> ad server annonceur : 65.1%  [ECART_MATERIEL]
+                       ad server annonceur -> tiers de vérification : 96.0%  [ECART_MATERIEL]
+[RUPTURE           ] bank-be / pl-ctv-spot (ctv)  plateforme=91,500 adserver=67,000 ratio=73.2%  <-- INVESTIGUER
+                     changement de régime le 2026-07-21 (ratio 0.92 -> 0.65) : mode de comptage, tag modifié, ou chute de consentement ce jour-là
+                       plateforme -> SSP : 93.0%  [ECART_MATERIEL]
+                       SSP -> ad server annonceur : 78.7%  [ECART_MATERIEL]
+                       ad server annonceur -> tiers de vérification : 96.0%  [ECART_MATERIEL]
+[STRUCTUREL_OK     ] media-uk / pl-ctv-ssai (ctv)  plateforme=121,500 adserver=109,300 ratio=90.0%  <-- INVESTIGUER
+                     écart stable dans la bande (ctv >= 80%) : à documenter, pas à négocier
+                       plateforme -> SSP : 110.2%  [ORDRE_CONTREDIT]
+                         SSP compte 10.2% de plus que plateforme, qui est déclaré en amont : soit l'ordre déclaré est faux, soit un évènement est compté deux fois. À trancher avant toute lecture d'écart
+                       SSP -> ad server annonceur : 81.6%  [ECART_MATERIEL]
+                       ad server annonceur -> tiers de vérification : 97.0%  [ALIGNE]
+[DOOH_NON_COMPARABLE] resto-fr / pl-dooh-ecran (dooh)  plateforme=400,000 adserver=1,200 ratio=0.3%
+                     multiplicateur d'impressions : ne jamais réconcilier tel quel, comparer les plays, pas les impressions
+[STRUCTUREL_OK     ] retail-fr / pl-hp-banner (web)  plateforme=300,000 adserver=281,600 ratio=93.9%
+                     écart stable dans la bande (web >= 90%) : à documenter, pas à négocier
+                       plateforme -> SSP : 93.0%  [ECART_MATERIEL]
+                       SSP -> ad server annonceur : 100.9%  [ALIGNE]
+                       ad server annonceur -> tiers de vérification : 96.0%  [ECART_MATERIEL]
+[TAG_MORT          ] retail-fr / pl-inapp-inter (inapp)  plateforme=101,000 adserver=380 ratio=0.4%  <-- INVESTIGUER
+                     l'ad server ne compte quasi rien : tag absent ou mauvais placement ID -> recette du placement
+                       plateforme -> SSP : 93.0%  [ECART_MATERIEL]
+                       SSP -> ad server annonceur : 0.4%  [ECART_MATERIEL]
+                       ad server annonceur -> tiers de vérification : 95.8%  [ECART_MATERIEL]
+
+[GOUVERNANCE_NON_DECLAREE] quelle source fait foi pour facturer le client, laquelle pour payer la supply ? Tant que ce n'est pas déclaré (--facturation, --achat), le sens de l'écart n'a pas de traduction financière
+
+3 placement(s) à investiguer / 6

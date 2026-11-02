@@ -1,0 +1,21 @@
+[OK]      retail-fr-ctv-q3         adhérence 99%
+[RISQUE]  auto-de-ctv-pg           adhérence 66%  courbe: régulière
+          famille suspecte : 1 SUPPLY — avails 11000 vs forecast 32000 (34%)
+          prochaine étape  : deal actif/plafonné ? daypart sans avails ? forecast à refaire
+[RISQUE]  bank-be-ctv              adhérence 95%  courbe: oscillation
+          famille suspecte : 2 CONTRÔLEUR — 4 inversions de signe de l'écart
+          prochaine étape  : lisser la mesure, zone morte, amortir le gain, plafonner l'accumulateur
+[RISQUE]  resto-fr-geo             adhérence 81%  courbe: marches d'escalier
+          famille suspecte : 5 CONSENTEMENT — taux passé de 60% à 41%
+          prochaine étape  : vérifier CMP/éditeur par marché ; traiter comme une panne de supply
+[RISQUE]  fashion-it-ctv           adhérence 76%  courbe: régulière
+          famille suspecte : 3 ENCHÈRE — win rate 6%
+          prochaine étape  : bid vs floor par paliers, net des fees ; APRÈS élimination de 1/4/5
+[RISQUE]  sport-us-ssai            adhérence 75%  courbe: régulière
+          famille suspecte : 4 MESURE — latence de reporting 12 h
+          prochaine étape  : piloter sur fenêtre lissée ; le décrochage est peut-être déjà résorbé
+[RISQUE]  media-uk-ctv-premium     adhérence 45%  courbe: régulière
+          famille suspecte : 6 ACCÈS SUPPLY — avails adressables 9000 sur 40000 réels (22%) : l'inventaire existe, il n'est pas ouvert
+          prochaine étape  : deals directs PG/PMP à ouvrir, liste d'inclusion à élargir ; ne PAS monter l'enchère, elle ne porte pas sur cet inventaire
+
+6 campagne(s) à risque / 7

@@ -1,0 +1,7 @@
+# Fixture de démo — chaque URL illustre une pathologie réelle
+https://ad.doubleclick.net/ddm/trackimp/N123.456SITE/B789;ord=%%CACHEBUSTER%%?dclid=${AUCTION_ID}
+https://track.example.com/imp?cb=1111111&utm_Source=display&utm_medium=&url=https://www.client.com/promo?utm_campaign=ete&gclid=abc123
+http://adserver.example.com/click?r=https%3A%2F%2Fwww.client.com%2Flp%3Futm_source%3Dcm360%26utm_medium%3Ddisplay
+https://tag.example.com/redirect?dest=https%253A%252F%252Fclient.com%252Flp&ord=[timestamp]
+https://serving.example.net/imp?ultm_source=cm&campaign=q3 2026&pid=55&pid=56
+https://clean.example.com/imp?cb=8347562891&utm_source=cm360&utm_medium=display&utm_campaign=q3

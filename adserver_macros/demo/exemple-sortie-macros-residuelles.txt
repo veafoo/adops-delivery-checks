@@ -1,0 +1,28 @@
+
+ligne 2 : https://ad.example-serving.com/imp?cb=%%CACHEBUSTER%%&cid=12345&pos=atf
+  [ERREUR] %%CACHEBUSTER%%  →  tracking (pixel ou beacon)
+          style GAM / DCM (%%X%%) — Google Ad Manager, rôle cachebuster
+
+ligne 5 : https://t.example.net/clk?url=https%3A%2F%2Fclient.com%2Flp%3Fgclid%3D%24%7BGCLID%7D&cb=99
+  [ERREUR] %24%7BGCLID%7D  →  redirection (paramètre 'url')
+          macro ${X} encodée (soit ${GCLID}) : elle a traversé un encodage sans jamais être substituée
+
+ligne 6 : https://ad.example-serving.com/imp?cb=%25%25CACHEBUSTER%25%25&cid=98765
+  [ERREUR] %25%25CACHEBUSTER%25%25  →  tracking (pixel ou beacon)
+          macro %%X%% encodée (soit %%CACHEBUSTER%%) : elle a traversé un encodage sans jamais être substituée — Google Ad Manager, rôle cachebuster
+
+ligne 7 : https://px.example.com/beacon/complete?id=${AUCTION_ID}&pct=100
+  [ERREUR] ${AUCTION_ID}  →  tracking (pixel ou beacon)
+          style DV360 / OpenRTB (${X}) — Display & Video 360/OpenRTB 2.6 (IAB)/Xandr (Microsoft Invest), rôle auction_id/cachebuster
+
+ligne 8 : https://ad.example-serving.com/imp?creative=%ecid!&site=%esid!&cb=1827364
+  [ERREUR] %ecid!  →  tracking (pixel ou beacon)
+          style CM360 / GAM (%eX!) — Campaign Manager 360/Google Ad Manager, rôle creative_id
+  [ERREUR] %esid!  →  tracking (pixel ou beacon)
+          style CM360 / GAM (%eX!) — Campaign Manager 360/Google Ad Manager, rôle site_id
+
+6 macro(s) NON SUBSTITUÉE(S) dans des appels réels :
+    5  tracking (pixel ou beacon)
+    1  redirection (paramètre 'url')
+
+Chaque occurrence est un appel parti avec un littéral au lieu d'une valeur.

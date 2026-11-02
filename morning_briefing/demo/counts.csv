@@ -1,0 +1,13 @@
+jour,campagne,placement,env,imp_plateforme,imp_adserver,taux_consentement
+2026-07-20,retail-fr,pl-hp-banner,web,100000,94000,0.62
+2026-07-21,retail-fr,pl-hp-banner,web,102000,95500,0.61
+2026-07-22,retail-fr,pl-hp-banner,web,98000,92100,0.62
+2026-07-20,retail-fr,pl-inapp-inter,inapp,50000,200,0.58
+2026-07-21,retail-fr,pl-inapp-inter,inapp,51000,180,0.58
+2026-07-20,auto-de,pl-video-preroll,web,80000,49000,0.60
+2026-07-21,auto-de,pl-video-preroll,web,81000,48500,0.61
+2026-07-22,auto-de,pl-video-preroll,web,79000,47800,0.60
+2026-07-20,bank-be,pl-ctv-spot,ctv,30000,27500,0.70
+2026-07-21,bank-be,pl-ctv-spot,ctv,31000,20000,0.70
+2026-07-22,bank-be,pl-ctv-spot,ctv,30500,19500,0.71
+2026-07-20,resto-fr,pl-dooh-ecran,dooh,400000,1200,

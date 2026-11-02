@@ -1,0 +1,11 @@
+# Tags de démonstration — cas réels de trafficking. Domaines fictifs.
+# 1. Redirect ad server tiers, macros CM360, à charger dans DV360
+https://ad.example-serving.com/imp?cb=%n&clk=%c&cid=%ecid!&site=%esid!&page=%u
+# 2. Tag GAM avec chaîne de clic non encodée AVANT d'autres params (le piège)
+https://tracker.example.com/i?clk=%%CLICK_URL_UNESC%%&cb=%%CACHEBUSTER%%&pos=%%PATTERN:pos%%
+# 3. Tag mixte : macros de trois plateformes, restes de copier-coller
+https://t.example.net/i?cb=%%CACHEBUSTER%%&id=${CREATIVE_ID}&ord=[timestamp]
+# 4. Tag mobile DV360 complet, à porter en DOOH
+https://t.example.net/i?cb=${CACHEBUSTER}&ifa=${ADVERTISING_IDENTIFIER}&clk=${CLICK_URL_UNESC}&lat=${LATITUDE}&lon=${LONGITUDE}
+# 5. Tag sans cachebuster ni consentement
+https://ad.example-serving.com/imp?cid=%ecid!&site=%esid!
